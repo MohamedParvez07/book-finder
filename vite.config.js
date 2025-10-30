@@ -9,8 +9,9 @@ export default defineConfig({
   server: {
     host: "0.0.0.0",      // let Vite listen on all interfaces
     port: 5173,           // default port
-    allowedHosts: ["*"],  // ✅ allow every host (safe for dev / CodeSandbox)
+    allowedHosts: ["8djd4q-5173.csb.app"], //✅ This is a temporary host ,while runnning this in codesandbox new host will be shown which can be pasted here to run
   },
 });
+
 
 
