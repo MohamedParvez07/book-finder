@@ -11,8 +11,9 @@ export default defineConfig({
     allowedHosts: [
       'localhost',
       '127.0.0.1',
-      'f8mm38-5173.csb.app'
+      'f8mm38-5173.csb.app',
       '*'// 👈 add your sandbox host here
     ]
   }
 })
+
