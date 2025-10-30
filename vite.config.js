@@ -7,15 +7,10 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   plugins: [react()],
   server: {
-    host: "0.0.0.0", // 👈 allow access from sandbox environment
-    port: 5173,      // 👈 default vite port
-    allowedHosts: [
-      "localhost",
-      "127.0.0.1",
-      "*.csb.app",       // 👈 allow CodeSandbox subdomains
-      "*.stackblitz.io", // 👈 allow StackBlitz subdomains
-      "*",               // 👈 wildcard (development only)
-    ],
+    host: "0.0.0.0",      // let Vite listen on all interfaces
+    port: 5173,           // default port
+    allowedHosts: ["*"],  // ✅ allow every host (safe for dev / CodeSandbox)
   },
 });
+
 
